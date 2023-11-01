@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "author": "Krishna raj BR B.E CSE",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -367.8, "left": -496.4, "attrs": {} },
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": -91.3,
+      "left": -437,
+      "attrs": { "env": "micropython-20231005-v1.21.0" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -334.5,
+      "left": -52.1,
+      "attrs": { "distance": "400" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic2",
+      "top": 279.9,
+      "left": -52.1,
+      "attrs": { "distance": "400" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -434, "left": 595.2, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo2", "top": -338, "left": 595.2, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo3", "top": -232.4, "left": 595.2, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo4", "top": 113.2, "left": 576, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo5", "top": 228.4, "left": 576, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo6", "top": 343.6, "left": 585.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "bb1:bp.1", "red", [ "v0", "h28.5", "v48", "h-364.8", "v-297.6" ] ],
+    [ "esp:GND.2", "bb1:bn.1", "black", [ "h-9.6", "v47.9", "h-220.8", "v-278.4" ] ],
+    [ "bb1:bp.25", "ultrasonic1:VCC", "red", [ "v-0.9", "h203.2" ] ],
+    [ "bb1:bn.25", "ultrasonic1:GND", "black", [ "v-1.3", "h241.6" ] ],
+    [ "bb1:bp.24", "ultrasonic2:VCC", "red", [ "v-0.9", "h116.8", "v585.6", "h105.6" ] ],
+    [ "bb1:bn.24", "ultrasonic2:GND", "black", [ "v-1.3", "h107.2", "v614.4", "h153.6" ] ],
+    [
+      "bb1:bp.22",
+      "servo1:V+",
+      "red",
+      [ "v37.5", "h126.4", "v-326.4", "h643.2", "v96", "h19.2" ]
+    ],
+    [ "bb1:bn.22", "servo1:GND", "black", [ "v17.9", "h116.8", "v-307.2", "h662.4", "v67.2" ] ],
+    [ "servo1:V+", "servo2:V+", "red", [ "h-48", "v96" ] ],
+    [ "servo1:GND", "servo2:GND", "black", [ "h-38.4", "v96" ] ],
+    [ "servo2:V+", "servo3:V+", "red", [ "h-48", "v105.6" ] ],
+    [ "servo2:GND", "servo3:GND", "black", [ "h-38.4", "v105.6" ] ],
+    [ "bb1:bp.20", "servo6:V+", "red", [ "v75.9", "h116.8", "v672", "h681.6", "v-163.3" ] ],
+    [ "bb1:bn.20", "servo6:GND", "black", [ "v75.5", "h107.2", "v672", "h710.4", "v-182.4" ] ],
+    [ "servo6:V+", "servo5:V+", "red", [ "h-38.4", "v-115.2" ] ],
+    [ "servo6:GND", "servo5:GND", "black", [ "h-19.2", "v-115.2" ] ],
+    [ "servo5:GND", "servo4:GND", "black", [ "h-9.6", "v-115.2" ] ],
+    [ "servo5:V+", "servo4:V+", "red", [ "h-28.8", "v-115.1" ] ],
+    [ "ultrasonic1:TRIG", "esp:D23", "gold", [ "v172.8", "h-240.4" ] ],
+    [ "ultrasonic1:ECHO", "esp:D22", "green", [ "v0" ] ],
+    [ "ultrasonic2:TRIG", "esp:D21", "gold", [ "v38.4", "h-211.6", "v-393.6" ] ],
+    [ "ultrasonic2:ECHO", "esp:D19", "green", [ "v48", "h-240.8", "v-441.6" ] ],
+    [ "servo6:PWM", "esp:D14", "#8f4814", [ "h-19.2", "v221", "h-1056", "v-614.4" ] ],
+    [ "servo3:PWM", "esp:D27", "#8f4814", [ "h-19.2", "v-326.2", "h-1113.6", "v509.1" ] ],
+    [ "servo2:PWM", "esp:D26", "#8f4814", [ "h-9.6", "v-239.8", "h-1104", "v508.8" ] ],
+    [ "servo1:PWM", "esp:D25", "#8f4814", [ "h-9.6", "v-172.6", "h-1094.4", "v508.8" ] ],
+    [
+      "servo4:PWM",
+      "esp:D13",
+      "#8f4814",
+      [ "h-38.4", "v403.4", "h-432", "v0", "h-566.4", "v-537.4" ]
+    ],
+    [ "servo5:PWM", "esp:D33", "#8f4814", [ "v307.4", "h-1104", "v-614.4" ] ],
+    [ "bb1:5t.a", "bb1:10t.c", "green", [ "v0" ] ],
+    [ "bb1:9t.d", "bb1:tn.7", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
