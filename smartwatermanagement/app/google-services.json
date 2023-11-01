@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1014959066076",
+    "firebase_url": "https://iot-smart-water-manageme-6f2dc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "iot-smart-water-manageme-6f2dc",
+    "storage_bucket": "iot-smart-water-manageme-6f2dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014959066076:android:1ee207cbbb8235e699dd19",
+        "android_client_info": {
+          "package_name": "com.example.smartwater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014959066076-osn210efhjjtd9608fha6nlkf9fei34c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUJhFZs-26xPcL_zknX8SuAMVxc1dkBUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014959066076-osn210efhjjtd9608fha6nlkf9fei34c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014959066076:android:b760691587cbc6d399dd19",
+        "android_client_info": {
+          "package_name": "com.example.smartwatermanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014959066076-osn210efhjjtd9608fha6nlkf9fei34c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUJhFZs-26xPcL_zknX8SuAMVxc1dkBUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014959066076-osn210efhjjtd9608fha6nlkf9fei34c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

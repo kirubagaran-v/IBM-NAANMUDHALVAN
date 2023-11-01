@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="location_entries">
+        <item>Anna Nagar Tank</item>
+        <item>Housing Board</item>
+    </string-array>
+</resources>

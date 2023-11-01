@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image21"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="349dp"
+        android:layout_height="54dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FAFAFA"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="335dp"
+        android:layout_height="67dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F1EEEE"
+        android:textColorHighlight="#F8F5F5"
+        android:textColorHint="#F3F0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="105dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="64dp"
+        android:text="Login"
+        android:textColorHighlight="#CD7C7C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419"
+        app:rippleColor="#E14545"
+        app:strokeColor="#E85656" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="102dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="24dp"
+        android:text="signup"
+        android:textColorHighlight="#DC4040"
+        android:textColorLink="#D84577"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="251dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="IoT Smart Parking Login"
+        android:textAlignment="center"
+        android:textColor="#F8F5F5"
+        android:textColorHighlight="#FAF9F9"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FBF9F9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
